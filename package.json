@@ -1,4 +1,5 @@
 {
+    "homepage": "https://No1UXDeveloper.github.io/sai",
     "name": "sai",
     "version": "0.1.0",
     "scripts": {
@@ -10,7 +11,8 @@
         "eject": "react-scripts eject",
         "client": "cd client && yarn start",
         "server": "nodemon server.js",
-        "dev": "concurrently --kill-others-on-fail \"   yarn server     \" \"   yarn client     \"  "
+        "dev": "concurrently --kill-others-on-fail \"   yarn server     \" \"   yarn client     \"  ",
+        "github-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
     },
     "dependencies": {
         "@material-ui/core": "^4.12.3",
@@ -21,7 +23,6 @@
         "express": "^4.16.4",
         "multer": "^1.4.4",
         "mysql": "^2.18.1",
-        "react-router-dom": "^6.2.2",
         "react-scripts": "5.0.0"
     },
     "devDependencies": {
